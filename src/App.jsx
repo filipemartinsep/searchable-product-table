@@ -65,6 +65,15 @@ function SearchBar() {
   );
 }
 
+function FilterableProductTable({ products }) {
+  return (
+    <div>
+      <SearchBar />
+      <ProductTable products={products} />
+    </div>
+  );
+}
+
 function App() {
   return <p>Hello, world!</p>;
 }
